@@ -3,8 +3,11 @@ from plotting import plot_fhr, plot_uc
 from Fhr_analysis import analyze_fhr_epochs
 from Uc_analysis import analyze_uc_peaks
 
-# Load and preprocess data
-data = load_data('path/to/Simulator_readings.csv')  # Replace with your actual file path
+# Google Drive direct access link
+url = 'https://drive.google.com/uc?id=1MeO_lFxsoHSxNFZDDgs-38bGbG0sMt9H'
+
+# Load data directly from the Google Drive link
+data = pd.read_csv(url)
 data = preprocess_data(data)
 
 # Plot data
